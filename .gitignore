@@ -1,0 +1,9 @@
+DB_BACKUP/
+
+NODE/node_modules/
+
+NODE/.env
+
+.DS_Store
+
+Thumbs.db

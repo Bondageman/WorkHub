@@ -1,0 +1,21 @@
+2025-11-09T22:49:42.932926Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.41) starting as process 29964
+2025-11-09T22:49:42.991076Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 61bfd1f9-bdbe-11f0-bcef-0a0027000004.
+2025-11-09T22:49:43.019806Z 1 [ERROR] [MY-011011] [Server] Failed to find valid data directory.
+2025-11-09T22:49:43.022146Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2025-11-09T22:49:43.023525Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-09T22:49:43.025906Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.41)  MySQL Community Server - GPL.
+2025-11-09T22:49:49.304317Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.41) starting as process 8900
+2025-11-09T22:49:49.388235Z 1 [ERROR] [MY-011011] [Server] Failed to find valid data directory.
+2025-11-09T22:49:49.390095Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2025-11-09T22:49:49.391001Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-09T22:49:49.393879Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.41)  MySQL Community Server - GPL.
+2025-11-09T22:52:45.202260Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.41) starting as process 16880
+2025-11-09T22:52:45.267686Z 1 [ERROR] [MY-011011] [Server] Failed to find valid data directory.
+2025-11-09T22:52:45.268687Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2025-11-09T22:52:45.269331Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-09T22:52:45.271609Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.41)  MySQL Community Server - GPL.
+2025-11-09T22:57:04.062663Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.41) starting as process 10136
+2025-11-09T22:57:04.130250Z 1 [ERROR] [MY-011011] [Server] Failed to find valid data directory.
+2025-11-09T22:57:04.131506Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2025-11-09T22:57:04.132261Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-09T22:57:04.134754Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.41)  MySQL Community Server - GPL.
