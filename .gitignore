@@ -6,6 +6,7 @@ NODE/.env
 
 .DS_Store
 
+<<<<<<< HEAD
 Thumbs.db
 
 npm-debug.log
@@ -13,3 +14,6 @@ npm-debug.log
 dist/
 
 build/
+=======
+Thumbs.db
+>>>>>>> 4129a45176b41493949a59c8829a97198a98e823

@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^6.0.0",
     "body-parser": "^2.2.1",
     "cors": "^2.8.5",
@@ -17,6 +18,11 @@
     "express": "^5.2.1",
     "express-fileupload": "^1.5.2",
     "jsonwebtoken": "^9.0.3",
+=======
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+>>>>>>> 4129a45176b41493949a59c8829a97198a98e823
     "mysql2": "^3.15.3"
   }
 }

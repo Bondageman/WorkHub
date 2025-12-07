@@ -327,6 +327,7 @@ app.get('/api/cabinet/me', authMiddleware, async (req, res) => {
     }
 });
 
+<<<<<<< HEAD
 // ------------------------------------------
 // --- ДОДАВАННЯ РЕЗЮМЕ (POST) ---
 // ------------------------------------------
@@ -396,6 +397,8 @@ app.post('/api/saved-vacancies', authMiddleware, async (req, res) => {
     }
 });
 
+=======
+>>>>>>> 4129a45176b41493949a59c8829a97198a98e823
 // 5. Запуск сервера
 app.listen(PORT, () => {
     console.log(`Сервер запущено на http://localhost:${PORT}`);
