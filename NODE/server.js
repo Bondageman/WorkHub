@@ -396,6 +396,58 @@ app.post('/api/saved-vacancies', authMiddleware, async (req, res) => {
     }
 });
 
+// ------------------------------------------
+// --- ОНОВЛЕННЯ ПРОФІЛЮ (PUT) ---
+// ------------------------------------------
+app.put('/api/cabinet/update', authMiddleware, async (req, res) => {
+    const userId = req.user.userId;
+    // Отримуємо всі поля, які є в твоїй таблиці job_seeker_profiles
+    const { 
+        first_name, last_name, phone, city, about, 
+        notify_email_new_jobs, notify_email_status_change, 
+        show_profile_to_employers, allow_contact_from_recruiters 
+    } = req.body;
+
+    try {
+        await pool.query(
+            `UPDATE job_seeker_profiles SET 
+                first_name = ?, last_name = ?, phone = ?, city = ?, about = ?,
+                notify_email_new_jobs = ?, notify_email_status_change = ?,
+                show_profile_to_employers = ?, allow_contact_from_recruiters = ?
+             WHERE user_id = ?`,
+            [
+                first_name, last_name, phone, city, about,
+                notify_email_new_jobs, notify_email_status_change,
+                show_profile_to_employers, allow_contact_from_recruiters,
+                userId
+            ]
+        );
+        res.json({ message: 'Профіль оновлено успішно!' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Помилка оновлення профілю', error: error.message });
+    }
+});
+
+// ------------------------------------------
+// --- ВИДАЛЕННЯ ЗБЕРЕЖЕНОЇ ВАКАНСІЇ (DELETE) ---
+// ------------------------------------------
+app.delete('/api/saved-vacancies/:id', authMiddleware, async (req, res) => {
+    const userId = req.user.userId;
+    const vacancyId = req.params.id;
+
+    try {
+        await pool.query(
+            'DELETE FROM saved_vacancies WHERE job_seeker_user_id = ? AND vacancy_id = ?',
+            [userId, vacancyId]
+        );
+        res.json({ message: 'Вакансію видалено зі збережених' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Помилка сервера', error: error.message });
+    }
+});
+
 // 5. Запуск сервера
 app.listen(PORT, () => {
     console.log(`Сервер запущено на http://localhost:${PORT}`);

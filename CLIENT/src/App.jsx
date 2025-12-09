@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Зверни увагу на одну крапку ./ (це означає: шукай в папці src/pages)
 import Dashboard from './pages/Dashboard';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage'; // <--- Імпорт
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         
         {/* Коли заходимо на /login - показуємо LoginPage */}
         <Route path="/login" element={<LoginPage />} />
+
+        <Route path="/register" element={<RegisterPage />} /> {/* <--- Новий маршрут */}
       </Routes>
     </BrowserRouter>
   );
